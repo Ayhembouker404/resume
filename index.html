@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ayhem Bouker | Aerospace Engineering Student & AI Builder</title>
+<meta name="description" content="Ayhem Bouker - Peking University pre-university student heading into aerospace engineering. AI, robotics and Python developer from Tunisia.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bg"></canvas>
+<div class="glow" id="glow"></div>
+
+<header class="nav">
+  <a href="#home" class="logo">AB<span>.</span></a>
+  <nav>
+    <a href="#about" data-i18n="nav_about">About</a>
+    <a href="#education" data-i18n="nav_edu">Education</a>
+    <a href="#skills" data-i18n="nav_skills">Skills</a>
+    <a href="#projects" data-i18n="nav_projects">Projects</a>
+    <a href="#awards" data-i18n="nav_awards">Awards</a>
+    <a href="#contact" data-i18n="nav_contact">Contact</a>
+  </nav>
+  <div class="toggles">
+    <button id="langBtn" aria-label="Switch language">中文</button>
+    <button id="themeBtn" aria-label="Switch theme">☀</button>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-text">
+    <p class="eyebrow" data-i18n="hello">Hello, I'm</p>
+    <h1 class="glitch" data-text="Ayhem Bouker">Ayhem Bouker</h1>
+    <p class="role"><span id="typed"></span><span class="caret">|</span></p>
+    <p class="lead" data-i18n="hero_lead">Pre-university student at Peking University, heading into aerospace engineering. I build AI, robots and drones that solve real problems.</p>
+    <div class="cta">
+      <a class="btn primary" href="#projects" data-i18n="cta_projects">See my projects</a>
+      <a class="btn" href="#contact" data-i18n="cta_contact">Get in touch</a>
+    </div>
+  </div>
+  <div class="photo-wrap tilt">
+    <div class="ph portrait">
+      <span data-i18n="ph_portrait">Your photo here<br><small>assets/profile.jpg</small></span>
+      <img src="assets/profile.jpg" alt="Ayhem Bouker" onerror="this.remove()">
+    </div>
+    <div class="ring"></div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats reveal">
+  <div><b data-count="2">0</b><span data-i18n="stat1">Gold medals at I-FEST</span></div>
+  <div><b data-count="4">0</b><span data-i18n="stat2">Languages spoken</span></div>
+  <div><b data-count="5">0</b><span data-i18n="stat3">HSK level</span></div>
+  <div><b data-count="1">0</b><span data-i18n="stat4">INCOSE special award, ISEF 2024</span></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="reveal">
+  <h2 data-i18n="about_h">About me</h2>
+  <div class="two">
+    <div>
+      <p data-i18n="about_p1">I'm Ayhem, originally from Tunisia and now studying in China. I'm currently in the pre-university program at Peking University (PKU), preparing for a degree in aerospace engineering.</p>
+      <p data-i18n="about_p2">I love turning ideas into working machines and software: from AI companions and chatbots to a drone submarine that cleans up oil spills. I've also coached robotics and AI, and I enjoy teaching what I learn.</p>
+    </div>
+    <div class="ph wide tilt">
+      <span data-i18n="ph_photo">Photo placeholder<br><small>assets/about.jpg</small></span>
+      <img src="assets/about.jpg" alt="" onerror="this.remove()">
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="reveal">
+  <h2 data-i18n="edu_h">Education</h2>
+  <div class="timeline">
+    <div class="item">
+      <span class="dot"></span>
+      <h3 data-i18n="edu1_t">Peking University (PKU), China</h3>
+      <p class="meta" data-i18n="edu1_m">Pre-university program (Yuke) · Aerospace engineering track</p>
+      <p data-i18n="edu1_d">Transferred to PKU's Yuke program to prepare for a degree in aerospace engineering, studying in Chinese.</p>
+    </div>
+    <div class="item">
+      <span class="dot"></span>
+      <h3 data-i18n="edu2_t">IPEM, Tunisia</h3>
+      <p class="meta" data-i18n="edu2_m">Preparatory classes · 1 semester</p>
+      <p data-i18n="edu2_d">Completed one semester of intensive preparatory studies before moving to China.</p>
+    </div>
+    <div class="item">
+      <span class="dot"></span>
+      <h3 data-i18n="edu3_t">Les Élites High School, Sousse, Tunisia</h3>
+      <p class="meta" data-i18n="edu3_m">High school graduate</p>
+      <p data-i18n="edu3_d">Where my passion for robotics, AI and competitions began.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="reveal">
+  <h2 data-i18n="skills_h">Skills</h2>
+  <div class="two">
+    <div class="card">
+      <h3 data-i18n="prog_h">Programming</h3>
+      <div class="bar"><label>Python</label><i data-level="95"></i></div>
+      <div class="bar"><label>C++</label><i data-level="70"></i></div>
+      <div class="bar"><label>Java</label><i data-level="65"></i></div>
+      <div class="bar"><label>HTML / CSS</label><i data-level="75"></i></div>
+      <div class="tags">
+        <span>AI / ML</span><span>Chatbots</span><span>Robotics</span><span>Drones</span><span>Embedded</span>
+      </div>
+    </div>
+    <div class="card">
+      <h3 data-i18n="lang_h">Languages</h3>
+      <div class="bar"><label data-i18n="l_ar">Arabic</label><i data-level="100"></i><em data-i18n="native">Native</em></div>
+      <div class="bar"><label data-i18n="l_fr">French</label><i data-level="100"></i><em data-i18n="native">Native</em></div>
+      <div class="bar"><label data-i18n="l_en">English</label><i data-level="100"></i><em data-i18n="native">Native-level</em></div>
+      <div class="bar"><label data-i18n="l_zh">Chinese</label><i data-level="70"></i><em>HSK 5</em></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="reveal">
+  <h2 data-i18n="proj_h">Projects</h2>
+  <div class="grid">
+    <article class="card tilt">
+      <div class="ph card-img"><span data-i18n="ph_proj">Project image<br><small>assets/drone-sub.jpg</small></span><img src="assets/drone-sub.jpg" alt="" onerror="this.remove()"></div>
+      <h3 data-i18n="p1_t">Oil-Spill Drone Submarine</h3>
+      <p data-i18n="p1_d">A drone submarine that detects oil spills and collects the oil, separating it from water using a hydrophobic, oleophilic material.</p>
+      <div class="tags"><span>Robotics</span><span>Environment</span><span>Materials</span></div>
+    </article>
+    <article class="card tilt">
+      <div class="ph card-img"><span data-i18n="ph_proj">Project image<br><small>assets/ai-companion.jpg</small></span><img src="assets/ai-companion.jpg" alt="" onerror="this.remove()"></div>
+      <h3 data-i18n="p2_t">AI Companions & Teachers</h3>
+      <p data-i18n="p2_d">Chatbots, AI companions and AI teaching assistants built in Python that hold conversations and help people learn.</p>
+      <div class="tags"><span>Python</span><span>LLMs</span><span>NLP</span></div>
+    </article>
+    <article class="card tilt">
+      <div class="ph card-img"><span data-i18n="ph_proj">Project image<br><small>assets/coaching.jpg</small></span><img src="assets/coaching.jpg" alt="" onerror="this.remove()"></div>
+      <h3 data-i18n="p3_t">Robotics & AI Coaching</h3>
+      <p data-i18n="p3_d">Coached students in robotics and artificial intelligence, guiding teams from first idea to competition-ready projects.</p>
+      <div class="tags"><span>Teaching</span><span>Robotics</span><span>AI</span></div>
+    </article>
+  </div>
+  <p class="note" data-i18n="proj_note">More projects and code on GitHub.</p>
+</section>
+
+<!-- AWARDS -->
+<section id="awards" class="reveal">
+  <h2 data-i18n="aw_h">Awards & Competitions</h2>
+  <div class="grid">
+    <div class="card award tilt"><b>🥉</b><h3 data-i18n="a1_t">1st AI Olympiad</h3><p data-i18n="a1_d">Bronze medal, then qualified for the 2nd AI Olympiad in China. Ranked best in Tunisia.</p></div>
+    <div class="card award tilt"><b>🏅</b><h3 data-i18n="a2_t">ISEF 2024</h3><p data-i18n="a2_d">Special award from INCOSE, plus a Top 10 finish.</p></div>
+    <div class="card award tilt"><b>🥇🥇</b><h3 data-i18n="a3_t">I-FEST</h3><p data-i18n="a3_d">Two gold medals.</p></div>
+  </div>
+  <div class="ph wide strip">
+    <span data-i18n="ph_awards">Award photos / certificates<br><small>assets/awards.jpg</small></span>
+    <img src="assets/awards.jpg" alt="" onerror="this.remove()">
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="reveal">
+  <h2 data-i18n="contact_h">Let's connect</h2>
+  <p class="center" data-i18n="contact_p">Open to collaborations, competitions and interesting projects.</p>
+  <div class="contacts">
+    <a class="btn primary" href="mailto:ayhembouker.info@gmail.com">✉ ayhembouker.info@gmail.com</a>
+    <a class="btn" href="tel:+8615718621391">☎ +86 157 1862 1391</a>
+    <a class="btn" href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="https://www.linkedin.com/in/YOUR-LINKEDIN-ID" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</section>
+</main>
+
+<footer>© <span id="year"></span> Ayhem Bouker</footer>
+<script src="script.js"></script>
+</body>
+</html>
